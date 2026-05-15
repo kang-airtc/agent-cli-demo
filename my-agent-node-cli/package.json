@@ -1,0 +1,26 @@
+{
+  "name": "my-agent-node-cli",
+  "version": "1.0.3",
+  "description": "A TypeScript CLI tool",
+  "main": "dist/cli.js",
+  "files": ["dist", "README.md"],
+  "bin": {
+    "my-agent": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts"
+  },
+  "keywords": ["cli", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+}
